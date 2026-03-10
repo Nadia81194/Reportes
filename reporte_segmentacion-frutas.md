@@ -49,6 +49,5 @@ Ahora identificamos las frutas y las contamos, aunque ya quimos el ruido tambien
 ```
 
 # RESULTADOS MASCARA AMARILLA 
-![Imagen mascaraoriginal_amarillo](imagenes/mascaraoriginal_amarillo .jpg)
 ![Imagen 1](‎imagenes/mascaraoriginal_amarillo .jpg)
 
