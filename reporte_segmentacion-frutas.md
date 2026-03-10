@@ -33,4 +33,23 @@ Principalmente aparecen dos tipos después de aplicar cv2.inRange:
 
 #¿Por qué es necesario eliminarlo antes del conteo?
 Si no limpias el ruido, el script contará cada pequeño punto blanco como si fuera una fruta, arrojando un número inflado.
+# Actividad 3
+Ahora identificamos las frutas y las contamos, aunque ya quimos el ruido tambien especificamos que cuanete las areas de un determinado tamaño para evitar que cuente objetos muy pequeños .
+
+```python
+#     # aqui se aplica un filtro para que solo cuante las areas grandes de color amerillo para no contar pequeños segmentos
+    conteo = 0
+    for i in range(1, num_labels):
+        area = stats[i, cv2.CC_STAT_AREA]
+        if area > 500: 
+            conteo += 1
+
+    print(f"total del conteo: {conteo}")
+
+```
+
+# RESULTADOS MASCARA AMARILLA 
+![Imagen mascaraoriginal_amarillo](imagenes/mascaraoriginal_amarillo .jpg)
+
+
 
