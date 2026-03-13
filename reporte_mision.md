@@ -197,10 +197,12 @@ cv2.destroyAllWindows()
 ##  Análisis del Analista (Reflexiones Finales)
 
 1. **Sobre los Operadores Puntuales (Misión 1):** Matemáticamente, ¿qué pasaría si en lugar de multiplicar por 50, hubieras sumado 50 a cada píxel oscuro? ¿Se revelaría el texto igual de claro o la imagen perdería contraste?
-> *[Escribe tu respuesta aquí]*
+> *[Pues no se ven las letras en el modo raw]*
+> ![mascara](respuestas/punto1.jpg)
 
 2. **Sobre el Espacio HSV (Misión 4):** ¿Por qué el modelo de color BGR es ineficiente para la Recuperación de Información cuando buscamos "todos los tonos de azul celeste", y por qué el modelo HSV resuelve este problema con una sola variable?
-> *[Escribe tu respuesta aquí]*
+> *[Porque en BGR el color está todo mezclado con el brillo. Si yo busco un celeste, los valores de Azul, Verde y Rojo cambian un montón si la imagen está oscura o si tiene mucha luz. Tendría que adivinar mil combinaciones de sombras para encontrar el mismo color.]*
+> *[El modelo HSV funciona porque el HSV separa el color real de qué tan brillante es.Entonces, no importa si el celeste es clarito o fuerte solo se busca un rango  (como el 80 a 100 que usamos) y ya me encuentra todos los celestes de un solo golpe, sin que me importe la iluminación.]* 
 
 3. **Sobre Ecuaciones Paramétricas (Misión 5):** ¿Por qué las ecuaciones paramétricas (usando el parámetro t) son mejores para dibujar formas cerradas y complejas en graficación por computadora que usar la clásica función $y=f(x)$?
-> *[Escribe tu respuesta aquí]*
+> *[Porque las funciones normales de $y=f(x)$ son muy "rígidas". Con las paramétricas es como si tuviéramos un lápiz que se mueve solo siguiendo el tiempo ($t$). Como $x$ y $y$ se calculan por separado, el dibujo puede dar vueltas, cruzarse a sí mismo y cerrar formas complejas (como la antena de Lissajous) sin problemas. Es mucho más fácil para la compu ir calculando puntito por puntito mientras el tiempo avanza que tratar de resolver una ecuación gigante de álgebra.]*
