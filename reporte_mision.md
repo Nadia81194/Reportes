@@ -198,7 +198,7 @@ cv2.destroyAllWindows()
 
 1. **Sobre los Operadores Puntuales (Misión 1):** Matemáticamente, ¿qué pasaría si en lugar de multiplicar por 50, hubieras sumado 50 a cada píxel oscuro? ¿Se revelaría el texto igual de claro o la imagen perdería contraste?
 > *[Pues no se ven las letras en el modo raw]*
-![mascara](respuestas/punto1.jpg)
+![mascara](imagenes/punto1.jpg)
 
 2. **Sobre el Espacio HSV (Misión 4):** ¿Por qué el modelo de color BGR es ineficiente para la Recuperación de Información cuando buscamos "todos los tonos de azul celeste", y por qué el modelo HSV resuelve este problema con una sola variable?
 > *[Porque en BGR el color está todo mezclado con el brillo. Si yo busco un celeste, los valores de Azul, Verde y Rojo cambian un montón si la imagen está oscura o si tiene mucha luz. Tendría que adivinar mil combinaciones de sombras para encontrar el mismo color.]*
