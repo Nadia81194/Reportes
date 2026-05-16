@@ -135,7 +135,7 @@ cv2.destroyAllWindows()
 
 ```
 # Resultado
-![mascara](imagenes/mision4e2.png)
+![mascara](imagenes/mision3e2.jpg)
 ### Misión 4
 - Código:
 ```python
@@ -163,7 +163,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ```
-
+# Resultado
+![mascara](imagenes/mision4e2.png)
 ### Misión 5
 - Evidencia tricolor: (inserta)
 - Mensaje recuperado: (inserta)
