@@ -198,13 +198,13 @@ cv2.destroyAllWindows()
 ## Análisis del Analista (Reflexiones Finales)
 
 1. **Operadores puntuales (M1):** ¿Qué diferencia visual hay entre recuperar con multiplicación (x50) y recuperar con suma (+50)? ¿Cuál preserva mejor el contraste del texto?
-> [Respuesta]
+> [La multiplicación escala los valores, haciendo que las diferencias entre píxeles claros y oscuros se estiren , mientras que la suma simplemente desplaza todos los valores hacia el blanco por igual. La multiplicación preserva mucho mejor el contraste del texto]
 
 2. **Transformaciones geométricas (M2):** ¿Por qué es importante escoger el centro correcto al rotar una imagen con `getRotationMatrix2D`?
-> [Respuesta]
+> [Por que la imagen no girará sobre su propio eje, sino que "orbitará" alrededor de otro punto (como el origen 0,0). Esto provoca que la imagen se salga del lienzo o quede movida, haciendo imposible que las dos mitades del QR encajen perfectamente]
 
 3. **Convolución (M4):** ¿Por qué un filtro promedio puede ayudar a reducir falsos positivos antes de segmentar por HSV, y qué desventaja tiene sobre los bordes del texto?
-> [Respuesta]
+> [El filtro promedio "suaviza" los píxeles de ruido aislados que tienen colores aleatorios.La desventaja es que también difumina los bordes.]
 
 4. **Canales (M5):** ¿Por qué separar canales puede revelar información que en la imagen a color “no se ve” a simple vista?
-> [Respuesta]
+> [Porque el ojo humano mezcla los tres canales (R, G, B) en un solo color final. Si escondemos un mensaje usando un valor muy alto en el Verde pero muy bajo en el Azul, en la imagen a color el ruido de los otros canales puede camuflarlo. Algo asi como en las peliculas que usaban Tecnicolor en los 30s. ]
