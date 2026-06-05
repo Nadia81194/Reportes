@@ -1,4 +1,4 @@
-
+<video src="imagenes/ojo.mp4" width="100%" controls loop muted></video>
 ```markdown
 # Reporte de Práctica: Iluminación y Materiales en un Ojo 3D
 **Curso:** Graficación  
@@ -137,4 +137,4 @@ Al declarar la posición de la luz inmediatamente después de un `glLoadIdentity
 ```
 
 ```
-<video src="imagenes/ojo.mp4" width="100%" controls loop muted></video>
+
