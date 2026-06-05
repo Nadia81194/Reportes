@@ -72,9 +72,6 @@ La cámara se modela mediante coordenadas esféricas polares utilizando los áng
 
 Para avanzar en la dirección exacta hacia la que mira el usuario, el script calcula el vector de dirección frontal ($fx, fz$) aplicando trigonometría elemental sobre el ángulo de rotación actual:
 
-$$fx = -\sin(\text{cam\_yaw})$$
-
-$$fz = -\cos(\text{cam\_yaw})$$
 
 Cada comando modifica de manera incremental las variables globales de posición (`cam_x`, `cam_y`, `cam_z`), las cuales se inyectan en la matriz de vista del pipeline gráfico usando la función matemática de utilidad `gluLookAt`.
 
