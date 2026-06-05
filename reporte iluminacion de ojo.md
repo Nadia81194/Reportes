@@ -137,4 +137,4 @@ Al declarar la posición de la luz inmediatamente después de un `glLoadIdentity
 ```
 
 ```
-![mascara](imagenes/ojo.mp4)
+<video src="imagenes/ojo.mp4" width="100%" controls loop muted></video>
