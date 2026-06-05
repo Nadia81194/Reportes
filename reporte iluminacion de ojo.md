@@ -134,7 +134,6 @@ La razón por la que la luz se comporta de forma estática en la **Opción A** r
 
 Al declarar la posición de la luz inmediatamente después de un `glLoadIdentity()`, la matriz está limpia (es la identidad), lo que provoca que la luz se posicione directamente en las coordenadas globales del mundo (o de la cámara). Cuando posteriormente se aplican los comandos `glTranslatef` y `glRotatef`, estos comandos sólo afectan a los objetos que se dibujen después (las esferas del ojo). Como resultado, al rotar el ojo, podemos observar cómo las sombras y los brillos especulares se desplazan dinámicamente sobre su superficie, validando que el cálculo de la iluminación es correcto y que la luz no se encuentra "pegada" al objeto.
 
-<video src="imagenes/ojo.mp4" width="100%" controls loop muted></video>
-
+<video src="imagenes/ojo.mp4" controls="controls" style="max-width: 100%;"></video>
 
 
